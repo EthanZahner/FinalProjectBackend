@@ -79,15 +79,23 @@ POST	/api/auth/login	Login, receive JWT
 Events (Public & Admin)
 
 GET	/api/events	—	List all events (supports ?category= & ?date= filters)
+
 GET	/api/events/:id	—	Get event details by ID
+
 POST	/api/events	Admin JWT	Create a new event
+
 PUT	/api/events/:id	Admin JWT	Update an event (cannot reduce seatCapacity below bookedSeats)
+
 DELETE	/api/events/:id	Admin JWT	Delete event (fails if bookings exist)
+
 GET	/api/events/report/bookings-per-event	Admin JWT	Admin dashboard: events with booking users
 
 Bookings (User & Bonus)
 
 GET	/api/bookings	User JWT	List bookings for current user
+
 GET	/api/bookings/:id	User JWT	Get one booking (ownership enforced)
+
 POST	/api/bookings	User JWT	Create a booking (seat check + QR)
+
 GET	/api/bookings/validate/:code	(Opt’l)	Validate ticket by booking ID
