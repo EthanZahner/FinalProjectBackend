@@ -67,14 +67,17 @@ EMAIL_USER="<your_email_address>"
 EMAIL_PASS="<your_email_password_or_app_password>"
 PORT=5000        # optional, default is 5000
 
+
 API Endpoints
+
 Auth
-Method	Route	Description
+
 POST	/api/auth/register	Register new user
+
 POST	/api/auth/login	Login, receive JWT
 
 Events (Public & Admin)
-Method	Route	Auth	Description
+
 GET	/api/events	—	List all events (supports ?category= & ?date= filters)
 GET	/api/events/:id	—	Get event details by ID
 POST	/api/events	Admin JWT	Create a new event
@@ -83,7 +86,7 @@ DELETE	/api/events/:id	Admin JWT	Delete event (fails if bookings exist)
 GET	/api/events/report/bookings-per-event	Admin JWT	Admin dashboard: events with booking users
 
 Bookings (User & Bonus)
-Method	Route	Auth	Description
+
 GET	/api/bookings	User JWT	List bookings for current user
 GET	/api/bookings/:id	User JWT	Get one booking (ownership enforced)
 POST	/api/bookings	User JWT	Create a booking (seat check + QR)
