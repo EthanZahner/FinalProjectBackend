@@ -12,15 +12,6 @@ Users can register, authenticate via JWT, browse events, book tickets (with seat
 - [Tech Stack](#tech-stack)  
 - [Prerequisites](#prerequisites)  
 - [Installation](#installation)  
-- [Environment Variables](#environment-variables)  
-- [Seeding Initial Data](#seeding-initial-data)  
-- [Running Locally](#running-locally)  
-- [API Endpoints](#api-endpoints)  
-- [Testing](#testing)  
-- [Deployment](#deployment)  
-- [Folder Structure](#folder-structure)  
-- [Contributing](#contributing)  
-- [License](#license)
 
 ---
 
