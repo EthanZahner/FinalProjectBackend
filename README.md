@@ -62,9 +62,13 @@ Users can register, authenticate via JWT, browse events, book tickets (with seat
   # .env
 
 MONGODB_URI="mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority"
+
 JWT_SECRET="<your_jwt_secret>"
+
 EMAIL_USER="<your_email_address>"
+
 EMAIL_PASS="<your_email_password_or_app_password>"
+
 PORT=5000        # optional, default is 5000
 
 
